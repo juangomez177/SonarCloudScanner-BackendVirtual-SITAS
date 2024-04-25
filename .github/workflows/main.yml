@@ -34,6 +34,9 @@ jobs:
     - name: Grant execute permission to gradlew
       run: chmod +x ./gradlew
 
+    - name: Generate JaCoCo test report
+      run: ./gradlew jacocoTestReport
+
     - name: SonarQube Scan
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
