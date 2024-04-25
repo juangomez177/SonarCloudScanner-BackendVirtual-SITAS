@@ -7,6 +7,7 @@ plugins {
 
 sonar {
   properties {
+    property "sonar.projectName", "modulo_autenticacion_autorizacion_backend"
     property "sonar.projectKey", "2024-01_modulo-atutenticacion-autorizacion-backend"
     property "sonar.organization", "2024-01"
     property "sonar.host.url", "https://sonarcloud.io"
